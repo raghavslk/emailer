@@ -1,15 +1,7 @@
 import Ember from 'ember';
 import AWS from 'npm:aws-sdk';
-import config from '../../config/environment';
 
 export default Ember.Controller.extend({
-
-  const ses : new AWS.SES({
-  apiVersion: '2010-12-01',
-  accessKeyId: config.aws.accessKeyId,
-  secretAccessKey: config.aws.secretAccessKey,
-  "region": "us-west-2"
-}),
 
  entry : {},
 
@@ -37,7 +29,7 @@ export default Ember.Controller.extend({
         ReplyToAddresses: [submittedForm.email],
         Source: `raghavslk@gmail.com`, // this has to be verified email in SES
       };
-
+      
     /*  ses.sendEmail(emailParams, function(error, data) {
         if (error) {
            console.log(error);
