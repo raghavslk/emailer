@@ -16,7 +16,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    aws: {
+      accessKeyId:'AKIAJTIMFBNXQC5UCI6A',
+      secretAccessKey:'tJT/3z2yEcyG7Q2MjgbxYCFhQZFq9zCzwAUbXmKG'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
