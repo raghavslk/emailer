@@ -16,8 +16,8 @@ export default Ember.Controller.extend({
         email: 'raghavslk@gmail.com',
         company: 'Frontier',
         phone: '1212343234',
-        message: this.get('entry').title,
-        details: this.get('entry').details,
+        message: this.get('entry').email,
+        details: this.get('entry').endDate,
         timestamp: new Date().getTime()
       };
 
@@ -46,7 +46,7 @@ export default Ember.Controller.extend({
            console.log('Report sent successfully');
         }
       });
-      
+
       console.log(submittedForm);
       console.log(ses);
     }
